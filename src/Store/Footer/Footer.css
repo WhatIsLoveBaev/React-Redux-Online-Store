@@ -1,0 +1,53 @@
+.footer_container {
+    width: 100%;
+    position: relative;
+}
+.footer_list {
+    width: 100%;
+    height: 300px;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer_block {
+    width: 25%;
+    color: #666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fb_header {
+    font-family: Futura PT Medium;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    cursor: default;
+}
+
+.fb_list div {
+    width: 100%;
+    height: 30px;
+    font-family: Futura PT Medium;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.fb_list div:hover {
+    color: cornflowerblue;
+}
+.footer_container .info {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: #ddd;
+    color: #666;
+    font-family: Futura PT Medium;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    cursor: default;
+}

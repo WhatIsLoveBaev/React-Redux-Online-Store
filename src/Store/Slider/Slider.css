@@ -1,0 +1,226 @@
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes text {
+    0% {
+        opacity:  0;
+        transform:  translateX(-100px);
+    }
+    100% {
+        opacity:  1;
+        transform:  translateX(0px);
+    }
+}
+
+.home {
+    /* height: 600px; */
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 60px;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+}
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.slide {
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: none;
+    animation: slide 2s ease;
+    padding: 25% 0;
+    position: relative;
+}
+.slide.active {
+    display: block;
+}
+.caption {
+    position: relative;
+    width: 130px;
+    height: 40px;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 20%;
+    font-family: FuturaPT-Bold;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.caption .face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s ease-in-out;
+    backface-visibility: hidden;
+    transform: perspective(500px) rotateY(0deg);
+    cursor: pointer;
+}
+.caption .face.front {
+    background-color: rgba(0, 0, 0, 0);
+    
+}
+.caption:hover .face.front {
+    transform: perspective(500px) rotateY(180deg);
+}
+.caption .face.back {
+    background-color: rgba(0, 0, 0, 0);
+    transform: perspective(500px) rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caption .face.back h1 {
+    color: white;
+}
+.back {
+    border: 0.5px solid rgb(255, 255, 255);
+}
+.back:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -4px;
+    width: calc(100% + 8px);
+    height: calc(100% - 12px);
+    background-color: black;
+    transition: .8s ease-in-out; 
+    transform: scaleY(1);
+}
+.back:hover:before {
+    transform: scaleY(0);
+}
+.back:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: -4px;
+    height: calc(100% + 8px);
+    width: calc(100% - 12px);
+    background-color: black;
+    transition: .8s ease-in-out; 
+    transform: scaleX(1);
+}
+.back:hover:after {
+    transform: scaleX(0);
+}
+
+.back h1 {
+    position: relative;
+    z-index: 3;
+}
+.caption:hover .face.back {
+    transform: perspective(500px) rotateY(360deg);
+}
+.caption .face h1 {
+    text-transform: uppercase;
+    /* transform: perspective(500px) translateZ(90px); */
+    font-size: 16px;
+}
+.slide.active .caption  {
+    opacity: 0;
+    animation: text 1s ease forwards;
+    animation-delay: 1s;
+}
+.slide.active .caption button  {
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    width: auto;
+    height: auto;
+    line-height: inherit;
+    margin-top: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.home .controls .prev,
+.home .controls .next {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    height: 60px;
+    width: 60px;
+    margin-top: -30px;
+    cursor: pointer;
+    transition: all .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home .controls .prev {
+    left: 0;
+}
+.home .controls .next {
+    right: 0;
+}
+.prev span, .next span {
+    border: solid rgb(60, 60, 60);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    width: 20px;
+    height: 20px;
+}
+.prev span {
+    transform: rotate(135deg);
+}
+.next span {
+    transform: rotate(-45deg);
+}
+
+.circles {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    z-index: 2;
+    color: white;
+    display: flex;
+    transform: translateX(-50%);
+}
+.circle {
+    display: flex;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(60, 60, 60);
+    border-radius: 50%;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.circle.active {
+    background-color: rgb(130, 130, 130);
+}
+
+
+.container {
+    color: white;
+    width: 20%;
+    height: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}

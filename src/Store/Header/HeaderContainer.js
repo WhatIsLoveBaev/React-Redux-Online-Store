@@ -68,14 +68,14 @@ const HeaderContainer = ({ DBState }) => {
     const productList = () => {
         
         const keysList = Object.keys(DBState).map(elem => (
-            <div key={elem} className='product_element' onMouseEnter={(e) => onTime(e)}>{elem}</div>
+            <span key={elem} className='product_element' onMouseEnter={(e) => onTime(e)}>{elem}</span>
         ))
         return (
             <div className="product_list_container">
                 <div className='product_element_wrapper' onMouseLeave={() => offTime()} >
-                    <button><div className="product_element sale" onMouseEnter={(e) => onTime(e)}>
+                    <button><span className="product_element sale" onMouseEnter={(e) => onTime(e)}>
                         Распродажа
-                    </div></button>
+                    </span></button>
                     {keysList}
                 </div>
             </div>

@@ -7,7 +7,7 @@ const Header = ({ modal, productList }) => (
         <div className='header_container'>
             <div className='logo_wrapper'>
                 <Link to='/'>
-                    <div className="logo">STORE</div>
+                    <span className="logo">STORE</span>
                 </Link>
             </div>
             <div className='product_wrapper active'><span>товары</span></div>

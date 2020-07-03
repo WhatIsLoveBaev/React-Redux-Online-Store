@@ -20,7 +20,7 @@
 }
 .sb_header_text {
     color: white;
-    font-family: FuturaPT-Bold;
+    font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-size: 2.5vw;
@@ -41,7 +41,7 @@
 }
 .sb_example {
     list-style: none;
-    font-family: FuturaPT-Bold;
+    font-weight: bold;
     letter-spacing: 1px;
     font-size: 0.8vw;
     text-transform: uppercase;
@@ -74,7 +74,7 @@
     background-color: white;
     /* width: 100%; */
     padding: 7% 14%;
-    font-family: FuturaPT-Bold;
+    font-weight: bold;
     letter-spacing: 1px;
     font-size: 1vw;
     text-transform: uppercase;

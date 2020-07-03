@@ -15,9 +15,8 @@ const Collage = ({ collage }) => (
                         {elem.img ? <img className='img' src={elem.img} alt={elem.label} /> : 
                         elem.video ? <Video video={elem.video} label={elem.label} /> : ''}
                     </div>
-                    <div className="elem_label">{elem.label}</div>
+                    <span className="elem_label">{elem.label}</span>
                 </Link>
-                
             </div>
             
         ))}   

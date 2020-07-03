@@ -12,40 +12,40 @@ const Footer = () => {
             <div className="footer_block">
                 <div className="fb_header">Lorem, ipsum.</div>
                 <div className="fb_list">
-                    <div>Помощь</div>
-                    <div>Отследить заказ</div>
-                    <div>Политика скидок</div>
-                    <div>Возвраты</div>
+                    <span>Помощь</span>
+                    <span>Отследить заказ</span>
+                    <span>Политика скидок</span>
+                    <span>Возвраты</span>
                 </div>
             </div>
 
             <div className="footer_block">
                 <div className="fb_header">Lorem, ipsum.</div>
                 <div className="fb_list">
-                    <div>Помощь</div>
-                    <div>Отследить заказ</div>
-                    <div>Политика скидок</div>
-                    <div>Возвраты</div>
+                    <span>Помощь</span>
+                    <span>Отследить заказ</span>
+                    <span>Политика скидок</span>
+                    <span>Возвраты</span>
                 </div>
             </div>
 
             <div className="footer_block">
                 <div className="fb_header">Lorem, ipsum.</div>
                 <div className="fb_list">
-                    <div>Помощь</div>
-                    <div>Отследить заказ</div>
-                    <div>Политика скидок</div>
-                    <div>Возвраты</div>
+                    <span>Помощь</span>
+                    <span>Отследить заказ</span>
+                    <span>Политика скидок</span>
+                    <span>Возвраты</span>
                 </div>
             </div>
 
             <div className="footer_block">
                 <div className="fb_header">Lorem, ipsum.</div>
                 <div className="fb_list">
-                    <div>Помощь</div>
-                    <div>Отследить заказ</div>
-                    <div>Политика скидок</div>
-                    <div>Возвраты</div>
+                    <span>Помощь</span>
+                    <span>Отследить заказ</span>
+                    <span>Политика скидок</span>
+                    <span>Возвраты</span>
                 </div>
             </div>
 

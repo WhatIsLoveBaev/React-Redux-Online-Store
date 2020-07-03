@@ -28,7 +28,7 @@ const ShowElement = ({ elem, onLiked }) => {
             </div>
 
             <div className="item_description">
-                <div className="item_name">{name}</div>
+                <span className="item_name">{name}</span>
                 <div className="item_price">
                     {salePriceDiv}
                     <span className={`price ${priceWithSale ? 'red_price' : ''}`} >

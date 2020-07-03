@@ -22,15 +22,15 @@ const SaleLine = ({ DBState }) => {
 
                 <div className="sale_wrapper">
                     <Link to='/sale/phones'>
-                        <div className='sale_element'>{left}</div>
+                        <span className='sale_element'>{left}</span>
                     </Link>
                 </div>
 
-                <div className="sale_text">Скидки до -50%</div>
+                <span className="sale_text">Скидки до -50%</span>
 
                 <div className="sale_wrapper">
                     <Link to='/sale/monitors'>
-                        <div className='sale_element'>{right}</div>
+                        <span className='sale_element'>{right}</span>
                     </Link> 
                 </div>
 

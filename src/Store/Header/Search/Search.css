@@ -19,7 +19,7 @@
     padding: 50px 0px 10px 0px;
     list-style: none;
     width: 100%;
-    font-family: Futura PT Medium;
+    font-weight: normal;
     letter-spacing: 1px;
     font-size: 18px;
 }
@@ -27,12 +27,12 @@
     padding: 5px 16px;
     color: black;
     cursor: pointer;
-    font-family: Futura PT Light;
+    font-weight: lighter;
     overflow: hidden;
     border: .5px solid #eee;
 }
 .search_element .highlight {
-    font-family: Futura PT Medium;
+    font-weight: normal;
 }
 .search_element:hover {
     background-color: #ccc;
@@ -54,7 +54,7 @@
 	height: 40px;
 	border: 0;
     font-size: 18px;
-    font-family: Futura PT Medium;
+    font-weight: normal;
     letter-spacing: 0.5px;
     padding-left: 16px;
     padding-right: 75px;
@@ -62,7 +62,7 @@
     z-index: 20;
 }
 .search_input::placeholder {
-    font-family: Futura PT Medium;
+    font-weight: normal;
     letter-spacing: 0.5px;
     font-size: 16px;
 }

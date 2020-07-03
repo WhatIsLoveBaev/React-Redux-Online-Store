@@ -7,6 +7,8 @@ import SaleLine  from './Sale/SaleLine'
 import SaleBlock from './Sale/SaleBlock'
 
 
+
+
 const Content = () => {
     return (
         <div>

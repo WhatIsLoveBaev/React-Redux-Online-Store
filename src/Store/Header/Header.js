@@ -3,6 +3,7 @@ import Link from '../../Link'
 import Search from './Search/Search'
 
 const Header = ({ modal, productList }) => (
+    
     <div className="header_menu">
         <div className='header_container'>
             <div className='logo_wrapper'>

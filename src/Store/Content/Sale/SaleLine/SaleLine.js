@@ -15,7 +15,6 @@ const SaleLine = ({ DBState }) => {
 
     let left = arrSale.length ? arrSale[0].productName : ''
     let right = arrSale.length ? arrSale[1].productName : ''
-
     return (
         <div className='sale_line_container'>
             <div className="sale_line">
@@ -33,7 +32,6 @@ const SaleLine = ({ DBState }) => {
                         <span className='sale_element'>{right}</span>
                     </Link> 
                 </div>
-
             </div>
         </div>
     )

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { connect } from 'react-redux'
 import Link from '../../Link'
-import './Header.css'
+import './Header.scss'
 
 import Header from './Header'
 

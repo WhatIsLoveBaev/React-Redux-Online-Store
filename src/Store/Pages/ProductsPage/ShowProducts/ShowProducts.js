@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import './ShowProducts.css'
+import './ShowProducts.scss'
 
 import SaleLine from '../../../Content/Sale/SaleLine'
 import ProductElement from './ProductElement'

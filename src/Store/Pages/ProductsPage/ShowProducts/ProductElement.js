@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Link from '../../../../Link'
 import { connect } from 'react-redux'
 import { deleteLike } from '../../../../Actions/LikedActions'
-import './ShowProducts.css'
+import './ShowProducts.scss'
 
 const ProductElement = ({ elem, liked, onDelete }) => {
 

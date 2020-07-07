@@ -1,8 +1,8 @@
 import React from 'react'
-import '../App.css'
+import './Styles/App.scss'
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 
-import ErrorBoundary from '../ErrorBoundary'
+import ErrorBoundary from './ErrorBoundary'
 import HeaderContainer from './Header'
 import Content from './Content'
 import ProductsPage from './Pages/ProductsPage'

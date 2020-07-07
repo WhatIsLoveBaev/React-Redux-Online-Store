@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import Link from '../../../../Link'
 
-import './SaleBlock.css'
+import './SaleBlock.scss'
 
 const SaleBlock = ({ DBState }) => {
 
@@ -35,7 +35,7 @@ const SaleBlock = ({ DBState }) => {
                                 </div>
                                 <div className="sb_text"><span>{elem.productName}</span></div>
                             </li>
-                        </Link> 
+                        </Link>
                     ))}
                 </ul>
                 

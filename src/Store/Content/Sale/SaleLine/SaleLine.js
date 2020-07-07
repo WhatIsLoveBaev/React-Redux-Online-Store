@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import Link from '../../../../Link'
-import './SaleLine.css'
+import './SaleLine.scss'
 
 const SaleLine = ({ DBState }) => {
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux'
 import ProductElement from '../ProductsPage/ShowProducts/ProductElement'
 import Link from '../../../Link'
-import './Liked.css'
+import './Liked.scss'
 
 const Liked = ({ LikedState }) => {
     console.log(LikedState);

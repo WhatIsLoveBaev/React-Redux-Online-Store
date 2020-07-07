@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from '../../../Link'
-import './PageNotFound.css'
+import './PageNotFound.scss'
 
 const PageNotFound = () => {
     return (

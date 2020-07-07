@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux'
 import { addLike } from '../../../../Actions/LikedActions'
-import './ShowElement.css'
+import './ShowElement.scss'
 
 const ShowElement = ({ elem, onLiked }) => {
 

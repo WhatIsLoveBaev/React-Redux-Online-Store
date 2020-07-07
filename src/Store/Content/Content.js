@@ -1,5 +1,4 @@
 import React from 'react';
-import './Content.css'
 
 import Slider from '../Slider'
 import Collage from './Collage'

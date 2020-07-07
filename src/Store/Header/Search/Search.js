@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { search } from '../../../Actions/HeaderActions'
 import { Redirect } from 'react-router-dom'
 import Link from '../../../Link'
-import './Search.css'
+import './Search.scss'
 
 const Search = ({ onSearch, searchState, DBState }) => {
 

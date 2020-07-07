@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Link from '../../Link'
-import './Slider.css'
+import './Slider.scss'
 
 import imgIphone from './Photos/iphone.jpg'
 import imgSamsung from './Photos/samsung.jpg'

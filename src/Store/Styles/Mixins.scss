@@ -1,3 +1,8 @@
+// Colors
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+};
+
 // Fonts
 @mixin font($size) {
     @if $size == light {

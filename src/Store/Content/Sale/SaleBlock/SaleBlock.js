@@ -6,6 +6,7 @@ import './SaleBlock.scss'
 
 const SaleBlock = ({ DBState }) => {
 
+
     let arrSale = []
 
     for (let key in DBState) {

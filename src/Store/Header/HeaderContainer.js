@@ -20,6 +20,7 @@ const HeaderContainer = ({ DBState }) => {
        if (DBState[key].saleGroup) DBSale.productMakers.push(key)
     }
 
+
     const expandedList = () => {
         const sale = elemTarget === 'Распродажа'
         const headingMakers = sale ? 'Список товаров со скидками' : 'Производитель товара'

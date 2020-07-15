@@ -1,6 +1,6 @@
 import React from 'react'
 import './Styles/App.scss'
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
+import { HashRouter, Route, Switch, Redirect } from 'react-router-dom'
 
 import ErrorBoundary from './ErrorBoundary'
 import HeaderContainer from './Header'
@@ -15,7 +15,7 @@ import Footer from './Footer'
 
 const Store = () => {
     return (
-        <Router>
+        <HashRouter>
             <ErrorBoundary>
                 <div className='store'>
                     <HeaderContainer />
@@ -41,7 +41,7 @@ const Store = () => {
                     <Footer />
                 </div>
             </ErrorBoundary>
-        </Router>
+        </HashRouter>
     )
 }
 

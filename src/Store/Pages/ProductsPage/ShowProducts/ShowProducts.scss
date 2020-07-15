@@ -33,7 +33,7 @@
     margin: 12px 0 1px 12px;
     cursor: pointer;
     border: 1px solid $white;
-    transition: $transition_3;
+    transition: transform .3s ease-in;
 
     &:nth-child(4n-3) { margin-left: 0; }
 

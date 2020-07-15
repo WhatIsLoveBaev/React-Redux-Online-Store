@@ -5,16 +5,13 @@ import Collage from './Collage'
 import SaleLine  from './Sale/SaleLine'
 import SaleBlock from './Sale/SaleBlock'
 
-
-
-
 const Content = () => {
     return (
         <div>
             <SaleLine />
             <SaleBlock />
             <Slider />
-            <Collage /> 
+            <Collage />
         </div>
     ) 
 }

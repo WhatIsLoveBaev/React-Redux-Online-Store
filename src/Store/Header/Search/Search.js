@@ -61,6 +61,7 @@ const Search = ({ onSearch, searchState, DBState }) => {
         setSearchPanel(false)
         document.body.classList.remove('search_hide')
         document.querySelector('.search_bcg').classList.remove('bcg_hide')
+        document.querySelector('.search_input').blur()
     }
     const onEnter = (e) => {
         if (e.key === 'Enter' && searchState !=='') {

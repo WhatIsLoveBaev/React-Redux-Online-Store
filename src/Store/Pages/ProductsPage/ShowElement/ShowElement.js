@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux'
 import { addLike } from '../../../../Actions/LikedActions'
 import './ShowElement.scss'
@@ -6,7 +6,16 @@ import './ShowElement.scss'
 const ShowElement = ({ elem, onLiked }) => {
 
     const [activeLike, setActiveLike] = useState('')
+    let timeId = ''
+    useEffect(() => {
+
+        if (activeLike) { onLiked(elem); timeId = setTimeout(() => setActiveLike(''), 400) }
+        
+
+        return function cleanup() { clearTimeout(timeId) }
+    })
     const {name, sale, price, img, shortDescription } = elem
+
     
     const priceWithSale = sale ? 
     `${ ('' + Math.round( ( price.split(' ').join('') / 100 * (100-sale) ) / 10 ) * 10)
@@ -15,9 +24,8 @@ const ShowElement = ({ elem, onLiked }) => {
     const salePriceDiv = priceWithSale ? <span className="sale">{price + ' руб.'}</span> : ''
 
     const like = () => {
-        setActiveLike('act')
-        onLiked(elem)
-        setTimeout(() => setActiveLike(''), 400)
+        
+        
     }
 
     return (
@@ -42,7 +50,7 @@ const ShowElement = ({ elem, onLiked }) => {
                 </ul>
                 <div className="basket_and_liked">
                     <span className='add_to_basket'>Добавить в корзину</span>
-                    <div className='add_to_liked' onClick={() => like()}><span className={activeLike}>&#10084;</span></div>
+                    <div className='add_to_liked' onClick={() => setActiveLike('act')}><span className={activeLike}>&#10084;</span></div>
                 </div>
             </div>
         </div>
